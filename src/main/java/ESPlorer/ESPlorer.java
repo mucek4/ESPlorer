@@ -5559,6 +5559,8 @@ public class ESPlorer extends javax.swing.JFrame {
 
         Port.getAccessibleContext().setAccessibleName("");
 
+        LEDPanel.setMinimumSize(new java.awt.Dimension(0, 125));
+        LEDPanel.setMaximumSize(new java.awt.Dimension(Short.MAX_VALUE, 125));
         RightBasePane.add(LEDPanel);
 
         RightBigPane.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -6045,9 +6047,9 @@ public class ESPlorer extends javax.swing.JFrame {
         RightBigPaneLayout.setVerticalGroup(
             RightBigPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RightBigPaneLayout.createSequentialGroup()
-                .addComponent(RightFilesSplitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
+                .addComponent(RightFilesSplitPane, 343, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RightSnippetsPane, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
+                .addComponent(RightSnippetsPane, 65, javax.swing.GroupLayout.DEFAULT_SIZE, 65))
         );
 
         RightBasePane.add(RightBigPane);
@@ -6123,7 +6125,7 @@ public class ESPlorer extends javax.swing.JFrame {
             }
         });
         RightExtraButtons.add(NodeReset);
-
+        RightExtraButtons.setMaximumSize(new java.awt.Dimension(Short.MAX_VALUE, 30));
         RightBasePane.add(RightExtraButtons);
 
         RightBottomPane.setOpaque(true);
@@ -6190,6 +6192,7 @@ public class ESPlorer extends javax.swing.JFrame {
         RightBottomPane.add(SendCommand, gridBagConstraints);
         SendCommand.getAccessibleContext().setAccessibleName("");
 
+        RightBottomPane.setMaximumSize(new java.awt.Dimension(Short.MAX_VALUE, 30));
         RightBasePane.add(RightBottomPane);
 
         HorizontSplit.setRightComponent(RightBasePane);
